@@ -23,7 +23,22 @@
 # print(sumx)
 
 #12.63 Prime Number in tuple
+# tuple1 = (x for x in range(1,26))
+# # print(tuple1)
+# for num in tuple1:
+#     count=0
+#     for i in range(1,num+1):
+#         # print(num,i)
+#         if (num%i==0):
+#             count = count +1
+            
+#     if(count==2):
+#         print(num)
+        
+#12.64 meanx. Number prime in tuple
 tuple1 = (x for x in range(1,26))
+sumx = 0
+count_prime = 0
 # print(tuple1)
 for num in tuple1:
     count=0
@@ -33,5 +48,8 @@ for num in tuple1:
             count = count +1
             
     if(count==2):
-        print(num)
-        
+        # print(num)
+        sumx = sumx + num
+        count_prime = count_prime+1
+meanx = sumx / count_prime
+print(meanx)
